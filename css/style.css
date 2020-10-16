@@ -1,0 +1,361 @@
+/* NOTE: MY CODE STARTS HERE */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgb(225, 240, 250);
+}
+.wrapper{
+  margin: 0 auto;
+  width: 1000px;
+  background-color: #f3f3f3;
+}
+header nav{
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  /*background-color: rgb(0, 76, 129);*/
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+}
+header nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+header nav ul li{
+  list-style: none;
+  line-height: 60px;
+}
+header nav ul li a{
+  height: 100%;
+  font-family: arial;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 0 10px;
+}
+header nav ul li a:hover{
+  color: #5f9ea0;
+}
+.login{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+.login form{
+  line-height: 60px;
+  z-index: 1000;
+}
+.login form input{
+  width: 140px;
+  height: 30px;
+  padding: 0 10px;
+  margin-right: 10px;
+  border:none;
+  background-color: #ccc;
+  font-family: arial;
+  font-size: 14px;
+  color: #111;
+}
+.login form button{
+  width: 60px;
+  height: 30px;
+  margin-right: 10px;
+  border: none;
+  background-color: #f3f3f3;
+  font-family: arial;
+  font-size: 14px;
+  color: #111;
+  cursor: pointer;
+}
+.login form button:hover{
+  background-color: #ccc;
+}
+.login a{
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ccc;
+}
+.login a:hover{
+  color: #5f9ea0;
+}
+header nav p{
+  float: left;
+  font-family: arial;
+  font-size: 25px;
+  font-weight: 400;
+  color: red;
+  line-height: 60px;
+  margin-left: 10px;
+}
+/*
+.welcome-page{
+  padding-top: 100px;
+}
+.welcome-page h2{
+  font-family: arial;
+  font-size: 80px;
+  color: rgb(0, 76, 129);
+  text-align: center;
+  line-height: 80px;
+}
+
+/* NOTE: SIGNUP PAGE */
+.signup-page{
+  padding-top: 40px;
+  /*background-color: rgb(225, 240, 250);*/
+}
+.signup-page h2{
+  font-family: arial;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  background-color: rgb(0, 76, 129);
+  border: 1px solid #b0c4de;
+  border-bottom: none;
+  border-radius: 50px 50px 0px 0px;
+  width: 400px;
+  margin: 0 auto;
+}
+.signup-form{
+  margin: 0 auto;
+  width: 400px;
+  padding-top: 10px;
+}
+.signup-form input{
+  width: 90%;
+  height: 50px;
+  padding: 0px 5%;
+  margin-bottom: 10px;
+  font-family: arial;
+  font-size: 16px;
+  color: #111;
+  border-radius: 10px;
+  border: none;
+}
+.signup-form button{
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  height: 40px;
+  border: none;
+  font-family: arial;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(15, 146, 201);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.signup-form button:hover{
+  background-color: #111;
+  opacity: 0.8;
+}
+.error{
+  padding-top: 10px;
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffb9b8;
+  border: 1px solid #a94442;
+  border-radius: 50px;
+  margin: 10px 30%;
+  width: 40%;
+  height: 30px;
+  font-size: 20px;
+  font-family: arial;
+  font-weight: 500;
+}
+.success{
+  padding-top: 10px;
+  text-align: center;
+  color: #3c763d;
+  background-color: #dff0d8;
+  border: 1px solid #3c763d;
+  border-radius: 5px;
+  width: 40%;
+  margin: 10px 30%;
+  height: 30px;
+  font-size: 20px;
+  font-family: arial;
+  font-weight: 500;
+}
+/* NOTE: contact page styling */
+.form{
+  width: 100%;
+  background-color: rgb(225, 240, 250);
+  margin: 0 auto;
+}
+.contact-form{
+  margin-top: 80px;
+}
+.contact-form input[type=text]{
+  padding: 10px 10px;
+  margin-top: 10px;
+  width:30%;
+  margin-left: 10px;
+  border: 1px;
+  border-color: #ccc;
+  border-style: solid;
+  font-family: arial;
+  color: #282828;
+}
+.contact-form input[type=radio]{
+  padding: 0px 10px;
+  margin: 10px;
+}
+.contact-form textarea{
+  resize: none;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-family: arial;
+  color: #282828;
+  padding: 6px 0.5%;
+}
+/* NOTE: button */
+.contact-form button{
+  text-transform: uppercase;
+  color: #fff;
+  background-color: green;
+  margin: 10px 10px;.
+  padding: 0px 90px;
+  width: 120px;
+  height: 40px;
+  border: none;
+}
+p{
+  display: inline-block;
+}
+/* NOTE: trial.html file */
+.contact-form input[type=email]{
+  padding: 10px 10px;
+  margin-top: 10px;
+  width:30%;
+  margin-left: 10px;
+  border: 1px;
+  border-color: #ccc;
+  border-style: solid;
+  font-family: arial;
+  color: #282828;
+}
+/* NOTE: DRAWER CODE */
+.btn-toggle-nav{
+  width: 60px;
+  height: 100%;
+  background-color: rgb(225, 240, 250);
+  background-image: url("img/download (3).png");
+  background-repeat: no-repeat; /*dont want the image to repeat over and over again*/
+  background-size: 40%;
+  background-position: center;
+  cursor: pointer;
+}
+.btn-toggle-nav:hover{
+  opacity: 0.5;
+}
+.nav-sidebar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: calc(100vh - 60px);
+  padding: 0 5px;
+  background-color:  rgb(0, 76, 129);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-sidebar ul{
+  padding-top: 15px;
+  overflow: hidden; /*cuts the text appearing outside the sidebar*/
+  visibility: hidden; /*hides the content in the sidebar*/
+}
+
+.nav-sidebar ul li{
+  line-height: 60px;
+  list-style: none;
+}
+
+.nav-sidebar ul li span, .nav-sidebar ul li a{
+  display: block;
+  height: 60px;
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+  font-family: arial;
+  font-size: 16px;
+  white-space: nowrap; /*takes doesnt jump to the next line if theres no space for it*/
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+}
+.nav-sidebar ul li a:hover{
+  background-color: #f3f3f3;
+}
+/* NOTE: DROPDOWN LIST */
+ul li ul{
+  position: absolute;
+  display: none;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+}
+ul li:hover ul{
+  display: block;
+}
+ul li ul li{
+  width: 110px;
+}
+ul li ul li a{
+  padding: 10px 14px;
+  line-height: 20px;
+  border-radius: 10px;
+}
+ul li ul li a:hover{
+  background-color: #f3f3f3;
+}
+/* NOTE: CASES */
+.cases-links{
+  margin-top: 80px;
+}
+.case-links{
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.cases-links h2{
+  font-family: arial;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+}
+.cases-links .cases-link{
+  float: left;
+  width: 230px;
+  height: 230px;
+  margin: 20px 10px 0px;
+  background-color: #e3e3e3;
+}
+.cases-links .cases-link p{
+  padding-top: 45%;
+  font-family: arial;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
